@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
-    <!-- navbar -->
+    
     <div class="heading">
       <div class="item">
         <h2 class="ui header">
@@ -20,13 +20,20 @@
         </h2>
       </div>
     </div>
+    <ul id="films">
+      <li class="film item"><h2 id="movie-title">Oneone</h2></li>
+      <!-- Placeholder for films list -->
+    </ul>
+    
 
     <div class="ui centered grid">
       <div class="four wide column">
         <div class="list-container">
           <!-- side menu -->
           <ul class="ui divided list" id="films">
-            <li class="film item">Movie titles will go here.</li>
+            <li class="film item"><h2 id="movie-title">Oneone</h2></li>
+            <li class="film item"><h2 id="movie-title">Twotwo</h2></li>
+            <li class="film item"><h2 id="movie-title">ThreeThree</h2></li>
           </ul>
         </div>
       </div>
@@ -44,13 +51,16 @@
       <div class="four wide column">
         <div class="ui cards" id="showing">
           <div class="card">
-            <div id="title" class="title">[MOVIE TITLE]</div>
-            <div id="runtime" class="meta">[RUNTIME] minutes</div>
+             <div id="movie-details">
+      <img id="movie-poster" src="https://media.istockphoto.com/id/1332479704/vector/viking-warrior-poster.jpg?s=612x612&w=is&k=20&c=647o5vcP2fXXgzn1PCDrMkbH4IdRuynqIGdaYTlYZFI=" alt="Movie Poster">
+            <div id="title" class="title"><h2 id="movie-title">Oneone</h2></div>
+            <div id="runtime" class="meta"> <p id="movie-runtime">1.30.40</p></div>
+              
             <div class="content">
               <div class="description">
-                <div id="film-info">[INSERT MOVIE DESCRIPTION HERE]</div>
-                <span id="showtime" class="ui label">[SHOWTIME]</span>
-                <span id="ticket-num">[X]</span> remaining tickets
+                <div id="film-info"><p id="movie-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, necessitatibus assumenda! Sit quis, dolore enim rerum numquam distinctio vitae itaque rem omnis! A doloremque iusto, assumenda quo sed autem exercitationem.</p></div>
+                <span id="showtime" class="ui label"><p id="movie-showtime">ui</p></span>
+                <span id="ticket-num"><p id="available-tickets">56</p></span> remaining tickets
               </div>
             </div>
             <div class="extra content">
@@ -59,9 +69,43 @@
               </button>
             </div>
           </div>
+              <div id="movie-details">
+      <img id="movie-poster" src="https://media.istockphoto.com/id/1332479704/vector/viking-warrior-poster.jpg?s=612x612&w=is&k=20&c=647o5vcP2fXXgzn1PCDrMkbH4IdRuynqIGdaYTlYZFI=" alt="Movie Poster">
+            <div id="title" class="title"><h2 id="movie-title">Oneone</h2></div>
+            <div id="runtime" class="meta"> <p id="movie-runtime">1.30.40</p></div>
+              
+            <div class="content">
+              <div class="description">
+                <div id="film-info"><p id="movie-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, necessitatibus assumenda! Sit quis, dolore enim rerum numquam distinctio vitae itaque rem omnis! A doloremque iusto, assumenda quo sed autem exercitationem.</p></div>
+                <span id="showtime" class="ui label"><p id="movie-showtime">ui</p></span>
+                <span id="ticket-num"><p id="available-tickets">56</p></span> remaining tickets
+              </div>
+            </div>
+            <div class="extra content">
+              <button id="buy-ticket" class="ui orange button">
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+
+          </div>
         </div>
       </div>
     </div>
+    <!-- my code challenge -->
+    <div id="ramen-menu"></div>
+<div id="ramen-detail">
+  <p>Insert comment here</p>
+  <p>Insert rating here</p>
+</div>
+<form id="new-ramen">
+  <input type="text" id="ramen-name" placeholder="Ramen Name">
+  <input type="text" id="ramen-image" placeholder="Image URL">
+  <input type="text" id="ramen-comment" placeholder="Comment">
+  <input type="number" id="ramen-rating" placeholder="Rating">
+  <button type="submit">Submit</button>
+</form>
+    
     <script src="src/index.js"></script>
   </body>
 </html>
